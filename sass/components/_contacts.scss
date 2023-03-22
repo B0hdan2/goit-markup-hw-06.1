@@ -1,0 +1,44 @@
+@media screen and (min-width:$tablet) {
+    .contacts {
+        // display: flex;
+        margin-left: 118px;
+    
+        &__item:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+    
+    
+    
+    .contacts__link {
+        display: block;
+    
+        color: $--primary-text-color;
+    
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier((0.4, 0, 0.2, 1));
+    
+        &:hover,
+        &:focus {
+            color: $--accent-text-color;
+        }
+    }
+    
+}
+.contacts__item-email{
+padding-top: 24px;
+margin-bottom: 4px;
+
+font-size: 12px;
+line-height: calc(16 / 12);
+letter-spacing: 0.04em;
+}
+
+.contacts__item-tel{
+    padding-bottom: 10px;
+
+    font-size: 12px;
+line-height: calc(16 / 12);
+letter-spacing: 0.04em;
+    }

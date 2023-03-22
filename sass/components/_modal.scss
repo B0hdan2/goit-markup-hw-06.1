@@ -1,0 +1,266 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(46, 47, 66, 0.4);
+  z-index: 10;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &--hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  min-width: 392px;
+  min-height: 586px;
+
+  background: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .backdrop--hidden & {
+    transform: translate(-50%, -50%) scale(0, 1);
+  }
+
+  &-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+
+    background: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &-button:hover,
+  &-button:focus {
+    background-color: $--accent-text-color;
+    fill: $--accent-white-color;
+  }
+
+  &-form {
+    padding: 72px 24px 24px;
+  }
+}
+
+// Form
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-text {
+    margin-bottom: 16px;
+    font-weight: 500;
+    color: $--titel-text-color;
+  }
+
+  &-icon {
+    position: absolute;
+    bottom: 14px;
+    left: 16px;
+
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+
+    fill: $--titel-text-color;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &_label-name {
+    display: flex;
+    padding-bottom: 4px;
+
+    font-weight: 400;
+    line-height: calc(16 / 12);
+
+    letter-spacing: 0.04em;
+
+    color: #8e8f99;
+  }
+}
+
+.form-box {
+  position: relative;
+  margin-bottom: 8px;
+
+  &.comment {
+    margin-bottom: 16px;
+  }
+
+  &:focus-within > input {
+    border: 1px solid $--accent-text-color;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  &:focus-within > .form-icon {
+    fill: $--accent-text-color;
+  }
+
+  &-checkbox {
+    margin-bottom: 24px;
+  }
+
+  & input,
+  & textarea {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  & input {
+    width: 360px;
+    height: 40px;
+    padding-left: 35px;
+  }
+}
+
+.textarea {
+  resize: none;
+
+  .form-box.comment:focus-within > & {
+    border: 1px solid $--accent-text-color;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  .form-box & {
+    width: 360px;
+    height: 120px;
+    padding-top: 8px;
+    padding-left: 16px;
+  }
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(16 / 12);
+
+    letter-spacing: 0.04em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+label {
+  display: flex;
+  align-items: center;
+
+  .form-box & {
+    display: flex;
+    padding-bottom: 4px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+
+    letter-spacing: 0.01em;
+
+    color: #8e8f99;
+  }
+}
+
+.checkbox {
+  appearance: none;
+  padding: 0;
+
+  &-text {
+    margin-right: 5px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(16 / 12);
+
+    letter-spacing: 0.04em;
+
+    color: #757575;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  &-link {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(16 / 12);
+
+    letter-spacing: 0.04em;
+    text-decoration-line: underline;
+
+    color: $--accent-text-color;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  &-icon {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+
+    border: 1.25px solid $--titel-text-color;
+    border-radius: 2px;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:checked + &-icon {
+    border-color: $--accent-text-color;
+    background-color: $--accent-text-color;
+    background-image: url(/images/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: border-box;
+  }
+}
+
+.button.form-button {
+  width: 169px;
+  height: 56px;
+
+  background-color: $--accent-text-color;
+  color: $--accent-white-color;
+
+  &:hover,
+  &:focus {
+    background-color: $--logo-text-color;
+    color: $--accent-text-color;
+  }
+}

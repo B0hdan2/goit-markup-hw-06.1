@@ -1,0 +1,111 @@
+.section.advantages{
+    padding-top: 89px;
+    padding-bottom: 96px;
+
+    @media screen and (min-width:$tablet) {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+
+.advantages{
+
+     &.svg {
+        width: 264px;
+        height: 112px;
+        padding: 24px 100px;
+    
+        background-color: $--logo-text-color;
+        border-radius: 4px;
+    }
+
+    &__container-list .item:not(:last-child) {
+        margin-right: 24px;
+    }
+   
+    &.svg{
+        @media screen and (max-width:1199px) {
+        display: none;
+        }
+    }
+}
+
+
+
+.advantages__list {
+    @media screen and (min-width:$tablet) {
+        display: flex; 
+        flex-wrap: wrap;
+        margin: -12px;
+    }
+    @media screen and (min-width:$desktop) {
+        flex-wrap: nowrap;
+    }
+
+    & .item{
+        @media screen and (max-width:767px) {
+            &:not(:last-child){
+                margin-bottom: 72px;
+            }
+        }
+    @media screen and (min-width:$tablet) {
+        width: calc((100% - 2 * 24px) / 2);
+        margin:12px
+    }
+    @media screen and (max-width:1139px) {
+        &:nth-child(-n + 2){
+            margin-bottom: 72px;
+        }
+    }
+
+
+
+
+
+   @media screen and (min-width:$desktop) {
+
+    & .item {
+        width: calc((100% - 72px) / 4);
+        margin-right: 24px;
+    }
+
+    & .item:nth-child(4n) {
+        margin-right: 0px;
+    }
+
+    & .title {
+        margin-bottom: 8px;
+    }
+   }
+}
+}
+
+
+
+.title {
+
+    &-advantages{
+        @media screen  and (max-width:767px){
+            text-align: center;
+        }
+        margin-bottom: 8px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: calc(40 / 34);
+        color: $--titel-text-color;
+   
+
+   @media screen and (min-width:$desktop) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    color: $--titel-text-color;
+   }
+
+}
+}

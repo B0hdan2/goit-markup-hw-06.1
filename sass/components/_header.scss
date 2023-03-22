@@ -1,0 +1,22 @@
+
+// .header {
+//     @media screen and (min-width:$tablet) {
+//        height:70px 
+//     }
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // width: 100%;
+
+    // background-image: linear-gradient(to bottom, rgba(161, 169, 255, 0.9), rgb(255, 255, 255));
+
+    // z-index: 1;
+// }
+
+@media screen and (min-width:$tablet) {
+    .header__container {
+        align-items: center;
+        display: flex;
+    
+    }
+}

@@ -1,0 +1,101 @@
+.subscribe {
+    @media screen and (max-width:767px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-title {
+        margin-bottom: 16px;
+    }
+
+    &-form{
+        display: flex;
+        @media screen and (max-width:767px) {
+        flex-direction: column;
+        align-items: center;
+        }
+
+    }
+
+    &-input{
+        @media screen and (max-width:767px) {
+            width: 396px;  
+            margin-bottom: 16px;
+        }
+        @media screen and (min-width:$tablet) {
+            margin-right: 24px;
+        }
+        width: 264px;
+        height: 40px;
+    
+    // margin-bottom: 24px;
+    
+        color: $--accent-white-color;
+        background-color: $--titel-text-color;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    }
+}
+
+
+.subscribe-form{
+   
+
+    & input::placeholder{
+        font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(24 / 12);
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+
+.subscribe-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 165px;
+    height: 40px;
+    cursor: pointer;
+    overflow: hidden;
+
+    background-color: $--accent-text-color;
+    color: $--accent-white-color;
+    fill: $--accent-white-color;
+    border: 1px;
+    border-radius: 4px;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier((0.4, 0, 0.2, 1));
+
+      &:hover,
+      &:focus {
+    background-color: $--accent-white-color;
+    color: $--accent-text-color;
+}
+
+}
+
+.subscribe-svg {
+    margin-left: 16px;
+
+    .subscribe-button:hover &,
+    .subscribe-button:focus & {
+    fill: $--accent-text-color;
+}
+}
+
+
+
+input, textarea{
+  
+    padding-left: 16px;
+}
+ 

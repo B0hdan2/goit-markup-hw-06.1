@@ -1,0 +1,72 @@
+.section.hero {
+    @media screen and (max-width:767px) {
+        padding-top: 112px;
+    padding-bottom: 119px;
+    }
+
+    @media screen and (min-width:$tablet) {
+        padding-top: 188px;
+    padding-bottom: 188px;
+    }
+    margin-left: auto;
+    margin-right: auto;
+
+
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)), url(/images/Hero/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-top: 1px solid #E7E9FC;
+}
+
+.hero {
+    text-align: center;
+    background-color: $--titel-text-color;
+
+    &-title {
+    
+        font-weight: 700;
+        
+        line-height: calc(60 / 56);
+        color: $--accent-white-color;
+        
+        @media screen and (max-width:767px) {
+            font-size: 36px;
+            margin-bottom: 72px;
+        }
+
+        @media screen and (min-width:$tablet) {
+            font-size: 56px;
+            margin-bottom: 48px;
+        }
+    
+    }
+}
+
+
+
+.button.hero-button {
+    padding: 16px 32px;
+
+    background-color: $--accent-text-color;
+    color: $--accent-white-color;
+    border: $--accent-text-color;
+
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $--accent-text-color;
+        background-color: $--logo-text-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    }
+}
+
+
+
+
+
