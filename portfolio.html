@@ -1,374 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WebStudio</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
-    rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="./css/modal.min.css" />
+  </head>
 
-  <link rel="stylesheet" href="./css/modal.min.css" />
-</head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <nav class="nav">
+          <a class="logo" href="./index.html"
+            ><span class="logo-text">Web</span> Studio</a
+          >
 
-<body>
-  <header class="header">
-    <div class="container header__container">
-      <nav class="nav">
-
-
-        <a class="logo" href="./index.html"><span class="logo-text">Web</span> Studio</a>
-
-
-
-
-        <button type="button" class="menu-button js-open-menu">
-       
-          <svg width="40" height="40" aria-label="">
-            <use class="icon-menu" href="./images/symbol-defs.svg#icon-burger_menu-roundedgg"></use>
-          </svg>
-
-        </button>
-
-        
-
-
-        <ul class="list nav__list">
-          <li class="item nav__list-item line">
-            <a href="./index.html" class="link">Studio</a>
-          </li>
-          <li class="item nav__list-item">
-            <a href="./portfolio.html" class="link link-current">Portfolio</a>
-          </li>
-          <li class="item nav__list-item">
-            <a href="" class="link">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-
-      <ul class="contacts">
-        <li class="item contacts__item-email">
-          <a href="mailto:info@devstudio.com" class="contacts__link">info@devstudio.com</a>
-        </li>
-        <li class="item contacts__item-tel">
-          <a href="tel:110001111111" class="contacts__link">+11 (000) 111-11-11</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="mobile-menu js-menu-container" >
-
-      <button class="modal-button js-close-menu" type="button">
-        <svg class="modal-svg" width="8" height="8">
-          <use href="./images/symbol-defs.svg#icon-Vector1X"></use>
-        </svg>
-      </button>
-
-      
-    </div>
-  </header>
-
-  <main>
-    <section class="section works">
-      <div class="container box">
-        <ul class="list box-list">
-          <li class="item">
-            <button type="button" class="button">All</button>
-          </li>
-          <li class="item">
-            <button type="button" class="button">Web Site</button>
-          </li>
-          <li class="item">
-            <button type="button" class="button">App</button>
-          </li>
-          <li class="item">
-            <button type="button" class="button">Design</button>
-          </li>
-          <li class="item">
-            <button type="button" class="button">Marketing</button>
-          </li>
-        </ul>
-      </div>
-      <!-- our works -->
-
-      <div class="container">
-        <h1 class="title-hide">our works</h1>
-        <ul class="list works-list">
-          <li class="item works-item">
-            <a href="" class="works-link">
-              <div class="works-card">
-                <div class="works-overfloy">
-                  <p class="text works-text">
-                    14 Stylish and User-Friendly App Design Concepts · Task
-                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
-                    App · Cloud Storage App
-                  </p>
-                </div>
-
-                <img class="works-img" src="./images/portfolio/imgtablet1.jpg" alt="Banking App Interface Concept"  width="356"
-                  height="300" />
-              </div>
-
-              <div class="works-box">
-                <h2 class="title title-works">Banking App Interface Concept</h2>
-                <p>App</p>
-              </div>
-            </a>
-          </li>
-
-          <li class="item works-item">
-            <a href="" class="works-link">
-              <div class="works-card">
-                <div class="works-overfloy">
-                  <p class="text works-text">
-                    14 Stylish and User-Friendly App Design Concepts · Task
-                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
-                    App · Cloud Storage App
-                  </p>
-                </div>
-
-                <img class="works-img" src="./images/portfolio/imgtablet2.jpg" alt="Banking App Interface Concept" width="356"
-                  height="300" />
-              </div>
-
-              <div class="works-box">
-                <h2 class="title title-works">Cashless Payment</h2>
-                <p>Marketing</p>
-              </div>
-            </a>
-          </li>
-          <li class="item works-item">
-            <a href="" class="works-link">
-              <div class="works-card">
-                <div class="works-overfloy">
-                  <p class="text works-text">
-                    14 Stylish and User-Friendly App Design Concepts · Task
-                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
-                    App · Cloud Storage App
-                  </p>
-                </div>
-
-                <img class="works-img" src="./images/portfolio/imgtablet3.jpg" alt="Banking App Interface Concept" width="356"
-                  height="300" />
-              </div>
-
-              <div class="works-box">
-                <h2 class="title title-works">Meditaion App</h2>
-                <p>App</p>
-              </div>
-            </a>
-          </li>
-          <li class="item works-item">
-            <a href="" class="works-link">
-              <div class="works-card">
-                <div class="works-overfloy">
-                  <p class="text works-text">
-                    14 Stylish and User-Friendly App Design Concepts · Task
-                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
-                    App · Cloud Storage App
-                  </p>
-                </div>
-
-                <img class="works-img" src="./images/portfolio/imgtablet4.jpg" alt="Banking App Interface Concept" width="356"
-                  height="300" />
-              </div>
-
-              <div class="works-box">
-                <h2 class="title title-works">Taxi Service</h2>
-                <p>Marketing</p>
-              </div>
-            </a>
-          </li>
-          <li class="item works-item">
-            <a href="" class="works-link">
-              <div class="works-card">
-                <div class="works-overfloy">
-                  <p class="text works-text">
-                    14 Stylish and User-Friendly App Design Concepts · Task
-                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
-                    App · Cloud Storage App
-                  </p>
-                </div>
-
-                <img class="works-img" src="./images/portfolio/imgtablet5.jpg" alt="Banking App Interface Concept" width="356"
-                  height="300" />
-              </div>
-
-              <div class="works-box">
-                <h2 class="title title-works">Screen Illustrations</h2>
-                <p>Design</p>
-              </div>
-            </a>
-          </li>
-          <li class="item works-item">
-            <a href="" class="works-link">
-              <div class="works-card">
-                <div class="works-overfloy">
-                  <p class="text works-text">
-                    14 Stylish and User-Friendly App Design Concepts · Task
-                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
-                    App · Cloud Storage App
-                  </p>
-                </div>
-
-                <img class="works-img" src="./images/portfolio/imgtablet6.jpg" alt="Banking App Interface Concept" width="356"
-                  height="300" />
-              </div>
-
-              <div class="works-box">
-                <h2 class="title title-works">Online Courses</h2>
-                <p>Marketing</p>
-              </div>
-            </a>
-          </li>
-          <li class="item works-item">
-            <a href="" class="works-link">
-              <div class="works-card">
-                <div class="works-overfloy">
-                  <p class="text works-text">
-                    14 Stylish and User-Friendly App Design Concepts · Task
-                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
-                    App · Cloud Storage App
-                  </p>
-                </div>
-
-                <img class="works-img" src="./images/portfolio/imgtablet7.jpg" alt="Banking App Interface Concept"  width="356"
-                  height="300" />
-              </div>
-
-              <div class="works-box">
-                <h2 class="title title-works">Instagram Stories Concept</h2>
-                <p>Design</p>
-              </div>
-            </a>
-          </li>
-          <li class="item works-item">
-            <a href="" class="works-link">
-              <div class="works-card">
-                <div class="works-overfloy">
-                  <p class="text works-text">
-                    14 Stylish and User-Friendly App Design Concepts · Task
-                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
-                    App · Cloud Storage App
-                  </p>
-                </div>
-
-                <img class="works-img" src="./images/portfolio/imgtablet8.jpg" alt="Banking App Interface Concept" width="356" 
-                  height="300" />
-              </div>
-
-              <div class="works-box">
-                <h2 class="title title-works">Organic Food</h2>
-                <p>Web Site</p>
-              </div>
-            </a>
-          </li>
-          <li class="item works-item">
-            <a href="" class="works-link">
-              <div class="works-card">
-                <div class="works-overfloy">
-                  <p class="text works-text">
-                    14 Stylish and User-Friendly App Design Concepts · Task
-                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
-                    App · Cloud Storage App
-                  </p>
-                </div>
-
-                <img class="works-img" src="./images/portfolio/imgtablet9.jpg" alt="Banking App Interface Concept" width="356"
-                  height="300" />
-              </div>
-
-              <div class="works-box" width="356">
-                <h2 class="title title-works">Fresh Coffee</h2>
-                <p>Web Site</p>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-container">
-      <div class="contacts-subject">
-        <a class="logo footer__logo" href="./index.html"><span class="logo-text">Web</span>Studio</a>
-        <p class="text footer-text">
-          Increase the flow of customers and sales for your business with
-          digital marketing & growth solutions.
-        </p>
-      </div>
-
-      <!-- Social media -->
-      <div class="social media">
-        <h2 class="social-media-title">Social media</h2>
-        <ul class="social-media list">
-          <li class="social-media item">
-            <a class="social-media network" href="https://instagram.com" target="_blank" rel="noopener noferrer"
-              aria-label="instagram">
-              <svg class="social-media svg" width="25px" height="24px">
-                <use href="./images/symbol-defs.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-media item">
-            <a class="social-media network" href="https://twitter.com" target="_blank" rel="noopener noferrer"
-              aria-label="twitter">
-              <svg class="social-media svg" width="25px" height="24px">
-                <use href="./images/symbol-defs.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-media item">
-            <a class="social-media network" href="https://facebook.com" target="_blank" rel="noopener noferrer"
-              aria-label="facebook">
-              <svg class="social-media svg" width="25" height="24">
-                <use href="./images/symbol-defs.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-media item">
-            <a class="social-media network" href="https://lincedin.com" target="_blank" rel="noopener noferrer"
-              aria-label="lincedin">
-              <svg class="social-media svg" width="25" height="24">
-                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Subscribe -->
-      <div class="subscribe">
-        <h2 class="subscribe-title">Subscribe</h2>
-
-
-        <form class="subscribe-form"  autocomplete="on" novalidate >
-        <label for="user-email">
-          <input class="subscribe-input" type="email" name="email" placeholder="Email">
-
-        </label>
-        
-          <button class="subscribe-button" type="submit"> 
-            Subscribe
-            <svg class="subscribe-svg" width="24" height="24">
-              <use href="./images/symbol-defs.svg#icon-icon-send5"></use>
+          <button type="button" class="menu-button js-open-menu">
+            <svg width="40" height="40" aria-label="">
+              <use
+                class="icon-menu"
+                href="./images/symbol-defs.svg#icon-burger_menu-roundedgg"
+              ></use>
             </svg>
           </button>
-        </form>
 
+          <ul class="list nav__list">
+            <li class="item nav__list-item line">
+              <a href="./index.html" class="link">Studio</a>
+            </li>
+            <li class="item nav__list-item">
+              <a href="./portfolio.html" class="link link-current">Portfolio</a>
+            </li>
+            <li class="item nav__list-item">
+              <a href="" class="link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
 
-      
+        <ul class="contacts">
+          <li class="item contacts__item-email">
+            <a href="mailto:info@devstudio.com" class="contacts__link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="item contacts__item-tel">
+            <a href="tel:110001111111" class="contacts__link"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
       </div>
-    </div>
-    <!-- <address>
+
+      <div class="mobile-menu js-menu-container">
+        <button class="modal-button js-close-menu" type="button">
+          <svg class="modal-svg" width="8" height="8">
+            <use href="./images/symbol-defs.svg#icon-Vector1X"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section works">
+        <div class="container box">
+          <ul class="list box-list">
+            <li class="item">
+              <button type="button" class="button">All</button>
+            </li>
+            <li class="item">
+              <button type="button" class="button">Web Site</button>
+            </li>
+            <li class="item">
+              <button type="button" class="button">App</button>
+            </li>
+            <li class="item">
+              <button type="button" class="button">Design</button>
+            </li>
+            <li class="item">
+              <button type="button" class="button">Marketing</button>
+            </li>
+          </ul>
+        </div>
+        <!-- our works -->
+
+        <div class="container">
+          <h1 class="title-hide">our works</h1>
+          <ul class="list works-list">
+            <li class="item works-item">
+              <a href="" class="works-link">
+                <div class="works-card">
+                  <div class="works-overfloy">
+                    <p class="text works-text">
+                      14 Stylish and User-Friendly App Design Concepts · Task
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
+                    </p>
+                  </div>
+
+                  <img
+                    class="works-img"
+                    src="./images/portfolio/imgtablet1.jpg"
+                    alt="Banking App Interface Concept"
+                    width="356"
+                    height="300"
+                  />
+                </div>
+
+                <div class="works-box">
+                  <h2 class="title title-works">
+                    Banking App Interface Concept
+                  </h2>
+                  <p>App</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="item works-item">
+              <a href="" class="works-link">
+                <div class="works-card">
+                  <div class="works-overfloy">
+                    <p class="text works-text">
+                      14 Stylish and User-Friendly App Design Concepts · Task
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
+                    </p>
+                  </div>
+
+                  <img
+                    class="works-img"
+                    src="./images/portfolio/imgtablet2.jpg"
+                    alt="Banking App Interface Concept"
+                    width="356"
+                    height="300"
+                  />
+                </div>
+
+                <div class="works-box">
+                  <h2 class="title title-works">Cashless Payment</h2>
+                  <p>Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="item works-item">
+              <a href="" class="works-link">
+                <div class="works-card">
+                  <div class="works-overfloy">
+                    <p class="text works-text">
+                      14 Stylish and User-Friendly App Design Concepts · Task
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
+                    </p>
+                  </div>
+
+                  <img
+                    class="works-img"
+                    src="./images/portfolio/imgtablet3.jpg"
+                    alt="Banking App Interface Concept"
+                    width="356"
+                    height="300"
+                  />
+                </div>
+
+                <div class="works-box">
+                  <h2 class="title title-works">Meditaion App</h2>
+                  <p>App</p>
+                </div>
+              </a>
+            </li>
+            <li class="item works-item">
+              <a href="" class="works-link">
+                <div class="works-card">
+                  <div class="works-overfloy">
+                    <p class="text works-text">
+                      14 Stylish and User-Friendly App Design Concepts · Task
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
+                    </p>
+                  </div>
+
+                  <img
+                    class="works-img"
+                    src="./images/portfolio/imgtablet4.jpg"
+                    alt="Banking App Interface Concept"
+                    width="356"
+                    height="300"
+                  />
+                </div>
+
+                <div class="works-box">
+                  <h2 class="title title-works">Taxi Service</h2>
+                  <p>Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="item works-item">
+              <a href="" class="works-link">
+                <div class="works-card">
+                  <div class="works-overfloy">
+                    <p class="text works-text">
+                      14 Stylish and User-Friendly App Design Concepts · Task
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
+                    </p>
+                  </div>
+
+                  <img
+                    class="works-img"
+                    src="./images/portfolio/imgtablet5.jpg"
+                    alt="Banking App Interface Concept"
+                    width="356"
+                    height="300"
+                  />
+                </div>
+
+                <div class="works-box">
+                  <h2 class="title title-works">Screen Illustrations</h2>
+                  <p>Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="item works-item">
+              <a href="" class="works-link">
+                <div class="works-card">
+                  <div class="works-overfloy">
+                    <p class="text works-text">
+                      14 Stylish and User-Friendly App Design Concepts · Task
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
+                    </p>
+                  </div>
+
+                  <img
+                    class="works-img"
+                    src="./images/portfolio/imgtablet6.jpg"
+                    alt="Banking App Interface Concept"
+                    width="356"
+                    height="300"
+                  />
+                </div>
+
+                <div class="works-box">
+                  <h2 class="title title-works">Online Courses</h2>
+                  <p>Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="item works-item">
+              <a href="" class="works-link">
+                <div class="works-card">
+                  <div class="works-overfloy">
+                    <p class="text works-text">
+                      14 Stylish and User-Friendly App Design Concepts · Task
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
+                    </p>
+                  </div>
+
+                  <img
+                    class="works-img"
+                    src="./images/portfolio/imgtablet7.jpg"
+                    alt="Banking App Interface Concept"
+                    width="356"
+                    height="300"
+                  />
+                </div>
+
+                <div class="works-box">
+                  <h2 class="title title-works">Instagram Stories Concept</h2>
+                  <p>Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="item works-item">
+              <a href="" class="works-link">
+                <div class="works-card">
+                  <div class="works-overfloy">
+                    <p class="text works-text">
+                      14 Stylish and User-Friendly App Design Concepts · Task
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
+                    </p>
+                  </div>
+
+                  <img
+                    class="works-img"
+                    src="./images/portfolio/imgtablet8.jpg"
+                    alt="Banking App Interface Concept"
+                    width="356"
+                    height="300"
+                  />
+                </div>
+
+                <div class="works-box">
+                  <h2 class="title title-works">Organic Food</h2>
+                  <p>Web Site</p>
+                </div>
+              </a>
+            </li>
+            <li class="item works-item">
+              <a href="" class="works-link">
+                <div class="works-card">
+                  <div class="works-overfloy">
+                    <p class="text works-text">
+                      14 Stylish and User-Friendly App Design Concepts · Task
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
+                    </p>
+                  </div>
+
+                  <img
+                    class="works-img"
+                    src="./images/portfolio/imgtablet9.jpg"
+                    alt="Banking App Interface Concept"
+                    width="356"
+                    height="300"
+                  />
+                </div>
+
+                <div class="works-box">
+                  <h2 class="title title-works">Fresh Coffee</h2>
+                  <p>Web Site</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="contacts-subject">
+          <a class="logo footer__logo" href="./index.html"
+            ><span class="logo-text">Web</span>Studio</a
+          >
+          <p class="text footer-text">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
+        </div>
+
+        <!-- Social media -->
+        <div class="social media">
+          <h2 class="social-media-title">Social media</h2>
+          <ul class="social-media list">
+            <li class="social-media item">
+              <a
+                class="social-media network"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noferrer"
+                aria-label="instagram"
+              >
+                <svg class="social-media svg" width="25px" height="24px">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media item">
+              <a
+                class="social-media network"
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noferrer"
+                aria-label="twitter"
+              >
+                <svg class="social-media svg" width="25px" height="24px">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media item">
+              <a
+                class="social-media network"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noferrer"
+                aria-label="facebook"
+              >
+                <svg class="social-media svg" width="25" height="24">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media item">
+              <a
+                class="social-media network"
+                href="https://lincedin.com"
+                target="_blank"
+                rel="noopener noferrer"
+                aria-label="lincedin"
+              >
+                <svg class="social-media svg" width="25" height="24">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Subscribe -->
+        <div class="subscribe">
+          <h2 class="subscribe-title">Subscribe</h2>
+
+          <form class="subscribe-form" autocomplete="on" novalidate>
+            <label for="user-email">
+              <input
+                class="subscribe-input"
+                id="user-email"
+                type="email"
+                name="email"
+                placeholder="Email"
+              />
+            </label>
+
+            <button class="subscribe-button" type="submit">
+              Subscribe
+              <svg class="subscribe-svg" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-icon-send5"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- <address>
             <ul>
                 <li class="address__linc">
                     <a href="https://www.google.com/maps/place/бульвар+Лесі+Українки,+26,+Київ,+02000/@50.4265841,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
@@ -382,8 +453,7 @@
                 </li>
               </ul>
         </address> -->
-  </footer>
-  <script src="./js/mobile-menu.js"></script>
-</body>
-
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
 </html>
