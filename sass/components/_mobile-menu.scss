@@ -1,0 +1,16 @@
+.mobile-menu{
+    position: fixed;
+   top: 0;
+   bottom: 0;
+   width: 100%;
+    background-color:$--accent-white-color;
+    z-index: 100;
+
+    transform: translateX(100%);
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu.is-open{
+    transform: translateX(0);
+}

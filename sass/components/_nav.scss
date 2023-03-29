@@ -1,14 +1,36 @@
-
-    .nav{
-        display: flex;
+  .nav{
+        @media screen and (max-width:$tablet) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
     }
+
+    .nav__list{
+        @media screen and (max-width:767px) {
+            display: none;
+        }
+    }
+
+    .contacts{
+        @media screen and (max-width:767px) {
+            display: none;
+        }
+    }
+    
 .menu-button{
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
     border: none;
      background-color: transparent;
-   
+     background-color: rebeccapurple;
+}
+
+.icon-menu{
+    fill: black;
 }
 
 .menu-button .icon-cross{
@@ -32,6 +54,11 @@ display: none;
     
         font-weight: 500;
     
+    }
+    .menu-button{
+        @media screen and (min-width:767px) {
+            display: none;
+        }
     }
     
     .nav__list {

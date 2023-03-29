@@ -22,14 +22,35 @@
   <header class="header">
     <div class="container header__container">
       <nav class="nav">
+
+
         <a class="logo" href="./index.html"><span class="logo-text">Web</span> Studio</a>
+
+
+
+
+        <button type="button" class="menu-button js-open-menu">
+       
+          <svg width="32" height="22" aria-label="">
+        
+            <use class="icon-menu" href="./images/symbol-defs.svg#icon-burger_menu"></use>
+
+            <use class="icon-cross" href=""></use>
+
+
+          </svg>
+
+        </button>
+
+        
+
 
         <ul class="list nav__list">
           <li class="item nav__list-item line">
-            <a href="./index.html" class="link">Studio</a>
+            <a href="./index.html" class="link link-current">Studio</a>
           </li>
           <li class="item nav__list-item">
-            <a href="./portfolio.html" class="link link-current">Portfolio</a>
+            <a href="./portfolio.html" class="link">Portfolio</a>
           </li>
           <li class="item nav__list-item">
             <a href="" class="link">Contacts</a>
@@ -38,13 +59,24 @@
       </nav>
 
       <ul class="contacts">
-        <li class="item contacts__item">
+        <li class="item contacts__item-email">
           <a href="mailto:info@devstudio.com" class="contacts__link">info@devstudio.com</a>
         </li>
-        <li class="item contacts__item">
+        <li class="item contacts__item-tel">
           <a href="tel:110001111111" class="contacts__link">+11 (000) 111-11-11</a>
         </li>
       </ul>
+    </div>
+
+    <div class="mobile-menu js-menu-container" >
+
+      <button class="modal-button js-close-menu" type="button">
+        <svg class="modal-svg" width="8" height="8">
+          <use href="./images/symbol-defs.svg#icon-Vector1X"></use>
+        </svg>
+      </button>
+
+      
     </div>
   </header>
 
@@ -356,6 +388,7 @@
               </ul>
         </address> -->
   </footer>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

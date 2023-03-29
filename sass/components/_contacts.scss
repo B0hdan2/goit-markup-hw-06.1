@@ -1,11 +1,16 @@
-@media screen and (min-width:$tablet) {
+
     .contacts {
+        @media screen and (min-width:$tablet) {
         // display: flex;
         margin-left: 118px;
     
-        &__item:not(:last-child) {
-            margin-right: 40px;
-        }
+       
+    }
+
+    @media screen and (min-width:$desktop) {
+        margin-left: auto;
+    display: flex;
+       
     }
     
     
@@ -33,6 +38,19 @@ margin-bottom: 4px;
 font-size: 12px;
 line-height: calc(16 / 12);
 letter-spacing: 0.04em;
+
+
+@media screen and (min-width:$desktop) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 40px;
+    margin-bottom: 0;
+    
+   
+    font-size: 16px;
+line-height: calc(24 / 16);
+letter-spacing: 0.02em;
+}
 }
 
 .contacts__item-tel{
@@ -41,4 +59,14 @@ letter-spacing: 0.04em;
     font-size: 12px;
 line-height: calc(16 / 12);
 letter-spacing: 0.04em;
+
+@media screen and (min-width:$desktop) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+   
+   
+    font-size: 16px;
+line-height: calc(24 / 16);
+letter-spacing: 0.02em;
+}
     }
