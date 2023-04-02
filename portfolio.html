@@ -68,11 +68,102 @@
       </div>
 
       <div class="mobile-menu js-menu-container">
-        <button class="modal-button js-close-menu" type="button">
-          <svg class="modal-svg" width="8" height="8">
+        <button class="modal-button mobile__button js-close-menu" type="button">
+          <svg class="mobile__svg" width="8" height="8">
             <use href="./images/symbol-defs.svg#icon-Vector1X"></use>
           </svg>
         </button>
+
+
+        <nav class="nav__mobile">
+        
+
+         
+
+          <ul class="mobile-list">
+            <li class="item nav__list-item ">
+              <a href="./index.html" class="link">Studio</a>
+            </li>
+            <li class="item nav__list-item">
+              <a href="./portfolio.html" class="link">Portfolio</a>
+            </li>
+            <li class="item nav__list-item">
+              <a href="" class="link link-current">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+
+
+        <ul class="mobile-contacts">
+          <li class="item contacts__item-tel">
+            <a href="tel:110001111111" class="contacts__link"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="item contacts__item-email">
+            <a href="mailto:info@devstudio.com" class="contacts__link-email"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+
+        <ul class="mobile list">
+          <li class="mobile item">
+            <a
+              class="mobile network"
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noferrer"
+              aria-label="instagram"
+            >
+              <svg class="mobile svg" width="24px" height="24px">
+                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile item">
+            <a
+              class="mobile network"
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noferrer"
+              aria-label="twitter"
+            >
+              <svg class="mobile svg" width="24px" height="24px">
+                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile item">
+            <a
+              class="mobile network"
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noferrer"
+              aria-label="facebook"
+            >
+              <svg class="mobile svg" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile item">
+            <a
+              class="mobile network"
+              href="https://lincedin.com"
+              target="_blank"
+              rel="noopener noferrer"
+              aria-label="lincedin"
+            >
+              <svg class="mobile svg" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
       </div>
     </header>
 
@@ -115,9 +206,11 @@
 
                   <img
                     class="works-img"
-                    src="./images/portfolio/imgtablet1.jpg"
+                    srcset="./images/portfolio/img1-396.jpg 396w, ./images/portfolio/img1-356.jpg 356w"
+                    sizes="(min-width: 360px) 396px, (min-width: 767px) 356px"
+                    src="./images/portfolio/img1-396.jpg"
                     alt="Banking App Interface Concept"
-                    width="356"
+                    width="396"
                     height="300"
                   />
                 </div>
@@ -146,7 +239,7 @@
                     class="works-img"
                     src="./images/portfolio/imgtablet2.jpg"
                     alt="Banking App Interface Concept"
-                    width="356"
+                    width="360"
                     height="300"
                   />
                 </div>
@@ -172,7 +265,7 @@
                     class="works-img"
                     src="./images/portfolio/imgtablet3.jpg"
                     alt="Banking App Interface Concept"
-                    width="356"
+                    width="360"
                     height="300"
                   />
                 </div>
@@ -198,7 +291,7 @@
                     class="works-img"
                     src="./images/portfolio/imgtablet4.jpg"
                     alt="Banking App Interface Concept"
-                    width="356"
+                    width="360"
                     height="300"
                   />
                 </div>
@@ -250,7 +343,7 @@
                     class="works-img"
                     src="./images/portfolio/imgtablet6.jpg"
                     alt="Banking App Interface Concept"
-                    width="356"
+                    width="360"
                     height="300"
                   />
                 </div>
@@ -276,7 +369,7 @@
                     class="works-img"
                     src="./images/portfolio/imgtablet7.jpg"
                     alt="Banking App Interface Concept"
-                    width="356"
+                    width="360"
                     height="300"
                   />
                 </div>
@@ -302,7 +395,7 @@
                     class="works-img"
                     src="./images/portfolio/imgtablet8.jpg"
                     alt="Banking App Interface Concept"
-                    width="356"
+                    width="360"
                     height="300"
                   />
                 </div>
@@ -328,7 +421,7 @@
                     class="works-img"
                     src="./images/portfolio/imgtablet9.jpg"
                     alt="Banking App Interface Concept"
-                    width="356"
+                    width="360"
                     height="300"
                   />
                 </div>

@@ -36,8 +36,6 @@ body {
 
 img {
   display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 a {
@@ -280,6 +278,11 @@ h6 {
   .section.hero {
     padding-top: 188px;
     padding-bottom: 188px;
+  }
+}
+@media screen and (min-divice-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section.hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/Hero/people-office@2x.jpg);
   }
 }
 
@@ -695,7 +698,6 @@ label {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 260px;
   background: #FFFFFF;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -717,7 +719,6 @@ label {
 }
 @media screen and (min-width: 1200px) {
   .team-list .item {
-    width: calc((100% - 72px) / 4);
     margin: 0;
     margin-right: 24px;
   }
@@ -1178,7 +1179,6 @@ input, textarea {
 }
 .works-card {
   width: 100%;
-  height: 280px;
   overflow: hidden;
   position: relative;
 }
@@ -1263,10 +1263,34 @@ input, textarea {
   top: 40px;
   right: 40px;
 }
+.mobile.list {
+  display: flex;
+  justify-content: space-between;
+}
+.mobile.network {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #4D5AE5;
+}
+.mobile.svg {
+  fill: #FFFFFF;
+}
 
 .mobile-list {
   padding-top: 80px;
   margin-bottom: 284px;
+}
+.mobile-list .nav__list-item .link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-list .nav__list-item .link:hover, .mobile-list .nav__list-item .link:focus {
+  color: #4D5AE5;
 }
 .mobile-list .item:not(:last-child) {
   margin-bottom: 40px;

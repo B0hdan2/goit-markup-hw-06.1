@@ -23,6 +23,30 @@
         right: 40px;
         
     } 
+    
+    &.list{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &.network{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+
+        background-color: $--accent-text-color;
+
+       
+    }
+
+    &.svg{
+        fill: $--accent-white-color;
+        
+        
+    }
 
 
 }
@@ -31,6 +55,18 @@
     padding-top: 80px;
     margin-bottom: 284px;
 
+    & .nav__list-item .link{
+
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: $--accent-text-color;
+        }
+    }
 
     & .item:not(:last-child){
         margin-bottom: 40px;
