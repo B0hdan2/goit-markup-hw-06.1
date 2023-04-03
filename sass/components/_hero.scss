@@ -13,7 +13,7 @@
 
 
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)), url(/images/Hero/people-office.jpg);
+            rgba(46, 47, 66, 0.7)), url('/images/Hero/people-office.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -23,7 +23,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)), url(/images/Hero/people-office@2x.jpg);
+        rgba(46, 47, 66, 0.7)), url('/images/Hero/people-office@2x.jpg');
     }
 }
 

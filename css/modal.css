@@ -262,7 +262,7 @@ h6 {
 .section.hero {
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/Hero/people-office.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/images/Hero/people-office.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -282,7 +282,7 @@ h6 {
 }
 @media screen and (min-divice-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .section.hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/Hero/people-office@2x.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/images/Hero/people-office@2x.jpg");
   }
 }
 
@@ -1135,6 +1135,21 @@ input, textarea {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
+@media screen and (min-width: 360px) {
+  .works-img {
+    width: 396px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .works-img {
+    width: 356px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .works-img {
+    width: 360px;
+  }
+}
 @media screen and (min-width: 768px) {
   .works-list {
     display: flex;
@@ -1195,6 +1210,11 @@ input, textarea {
   border-top: 0;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   background: #FFFFFF;
+}
+@media screen and (max-width: 767px) {
+  .works-box {
+    max-width: 396px;
+  }
 }
 
 .title-works {

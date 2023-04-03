@@ -9,6 +9,20 @@
 }
 
 .works{
+
+    &-img{
+@media screen and (min-width: 360px) {
+    width: 396px;
+}
+
+@media screen and (min-width: $tablet) {
+    width: 356px;
+}
+
+@media screen and (min-width: $desktop) {
+    width: 360px;
+}
+    }
    
     &-list{
 
@@ -87,6 +101,11 @@
     }
     
     &-box {
+
+        @media screen and (max-width: 767px) {
+            max-width: 396px;
+        }
+
     padding: 32px 16px;
 
     border: 1px solid #E7E9FC;
